@@ -58,6 +58,7 @@ public class TestControllerDB {
 	 */
 	@GetMapping("/fail")
 	public void fail() {
+		System.out.println("fail");
 		System.exit(1);
 	}
 	
