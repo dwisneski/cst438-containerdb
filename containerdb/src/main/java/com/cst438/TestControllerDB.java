@@ -53,6 +53,14 @@ public class TestControllerDB {
 		return "ok";
 	}
 	
+	/*
+	 * terminate the server
+	 */
+	@GetMapping("/fail")
+	public void fail() {
+		System.exit(1);
+	}
+	
 	
 	private String getIpAddress() {
 		try {
